@@ -2,13 +2,15 @@ class Solution {
 public:
     int maximumPrimeDifference(vector<int>& nums) {
         int a,b;
-      for(int i=0;i<nums.size();i++){
-         if(nums[i]==1){
+        int d=nums.size();
+      for(int i=0;i<d;i++){
+        int e=nums[i];
+         if(e==1){
             continue;
         }
         bool c=true;
-        for(int j=2;j<nums[i];j++){
-            if(nums[i]%j==0 && nums[i]!=2){
+        for(int j=2;j<e;j++){
+            if(e%j==0 && e!=2){
                 c=false;
                 break;
             }
@@ -18,13 +20,14 @@ public:
             break;
         }
       }  
-      for(int i=nums.size()-1;i>=0;i--){
-        if(nums[i]==1){
+      for(int i=d-1;i>=0;i--){
+        int e=nums[i];
+        if(e==1){
             continue;
         }
         bool c=true;
-        for(int j=2;j<nums[i];j++){
-            if(nums[i]%j==0 && nums[i]!=2){
+        for(int j=2;j<e;j++){
+            if(e%j==0 && e!=2){
                 c=false;
                 break;
             }
