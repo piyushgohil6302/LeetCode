@@ -5,6 +5,7 @@ public:
         int a=nums[0]*nums[1];
         int b=nums.size();
         int c=nums[b-1]*nums[b-2];
-         return c-a;
+        int d=c-a;
+         return d;
     }
 };
