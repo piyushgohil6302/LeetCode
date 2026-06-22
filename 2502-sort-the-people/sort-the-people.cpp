@@ -1,8 +1,9 @@
 class Solution {
 public:
     vector<string> sortPeople(vector<string>& names, vector<int>& heights) {
-        for(int i=0;i<names.size();i++){
-            for(int j=i;j<names.size();j++){
+        int a=names.size();
+        for(int i=0;i<a;i++){
+            for(int j=i;j<a;j++){
                 if(heights[i]<heights[j]){
                     int temp=heights[i];
                     heights[i]=heights[j];
